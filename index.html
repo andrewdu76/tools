@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OzCazual - Your Local Casual Wear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OzCazual</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to OzCazual</h2>
+            <p>Your neighborhood's favorite spot for quality casual wear. Explore our collection and find your perfect fit today!</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Located in the heart of your community, OzCazual is dedicated to bringing you the best in casual wear. We pride ourselves on quality, comfort, and local charm. Our collections are inspired by the vibrant spirit of our neighborhood and the people who make it special.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Personalized Styling Advice</li>
+                <li>Free Local Delivery</li>
+                <li>Exclusive Community Events</li>
+                <li>Custom Alterations</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="product1.jpg" alt="Casual Shirt">
+                    <h3>Casual Shirt</h3>
+                    <p>$30.00</p>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Casual Pants">
+                    <h3>Casual Pants</h3>
+                    <p>$45.00</p>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Summer Dress">
+                    <h3>Summer Dress</h3>
+                    <p>$55.00</p>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"OzCazual has the best selection of casual wear. I love supporting local businesses, and their quality is unbeatable!" - Jane Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"Great products and even better service. The team at OzCazual really cares about their customers." - John Smith</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 OzCazual. All Rights Reserved. | Proudly Serving Our Local Community</p>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background: #77B5FE;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .hero h2 {
+            margin: 0;
+        }
+        .btn {
+            display: inline-block;
+            color: #fff;
+            background: #0044cc;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #002a80;
+        }
+        section {
+            padding: 20px 0;
+            text-align: center;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        .testimonial {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</body>
+</html>
